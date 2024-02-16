@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="h-full bg-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="assets/Libs/axios/axios.min.js"></script>
+  <script defer src = "../../../../assets/js/reg.js"></script>
+  <link href="../../../../assets/dist/output.css" type="text/css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full">
+  <div class="w-full h-full bg-no-repeat bg-cover bg-left bg-fixed" style="background-image: url(../../../../assets/img/Vector.svg);">
+    <div class="flex min-h-full flex-col н sm:px-32  px-6  py-24 ">
+      <div class="sm:someblockv2 sm:bg-white sm:bg-opacity-15 sm:rounded-2xl sm:shadow-inner sm:backdrop-blur-md sm:mt-12">
+        <div class="flex items-center justify-end sm:mt-8 ">
+            <label for="password" class="block mr-2 text-md font-light leading-6 text-white text-opacity-80">Есть аккаунт?</label>
+            <div class="text-md">
+              <a href="/auth" class="font-light pr-10  text-white hover:text-sky-700 text-opacity-80 underline">Войти</a>
+            </div>
+          </div>
+        <div class="sm:mr-auto  sm:w-full sm:max-w-sm">
+          <h2 class="mt-1 sm:mr-14  text-center text-3xl font-semibold   leading-9 tracking-tight text-white ">Регистрация</h2>
+        </div>  
+        <div class="mt-7  sm:ml-20 sm:mr-auto sm:w-full sm:max-w-sm">
+          <div class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium leading-6 text-white">Имя пользователя</label>
+              <div class="mt-1">
+                <input id="name" name="name" placeholder="Имя пользователя" type="login" autocomplete="name" required class="block w-full indent-2 rounded-md border-0 py-1.5  text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+      
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="email" class="block text-sm font-medium leading-6 text-white">Почта</label>
+              </div>
+              <div class="mt-1">
+                <input id="email" name="email"  placeholder="Почта" type="email" autocomplete="email" required class="block w-full  indent-2 rounded-md  border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              </div>
+              
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium leading-6 text-white">Пароль</label>
+                <div class="mt-1">
+                  <input id="password" name="password" placeholder="Пароль" type="password"  required class="block w-full indent-2 rounded-md border-0 py-1.5  text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>    
+              <div>
+                <label for="password" class="block text-sm font-medium leading-6 text-white">Повторите Пароль</label>
+                <div class="mt-1">
+                  <input id="confirm_password" name="confirm_password" placeholder="Повторите Пароль" type="confirm_password"  required class="block w-full indent-2 rounded-md border-0 py-1.5  text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>   
+            <div class="">
+              <button type="submit" onclick="reg_submit()" class="flex w-2/4 mx-auto justify-center rounded-md bg-cyan-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">Регистрация</button>
+            </div>
+           
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
